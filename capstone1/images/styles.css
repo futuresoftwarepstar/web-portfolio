@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+    color: #fff;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    position: relative;
+    padding: 100px 20px;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    min-height: 100vh; /* Ensures each section takes up the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+#landing {
+     background-image: url('grad pic.jpg');
+    background-size: contain; /* Ensures the entire image is visible */
+    background-position: center;
+}
+
+#projects {
+    background-image: url('https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#tools {
+    background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image: url('https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 50px 10px;
+    }
+
+    #landing {
+        padding: 80px 0;
+    }
+}
